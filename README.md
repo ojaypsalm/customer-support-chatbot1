@@ -117,4 +117,4 @@ MIT License
 
 ## Author
 
-Built by [Your Name] - OAU Engineering Graduate, AI Enthusiast
+Built by OJO Samuel  Adekanmi - OAU Engineering Graduate, AI Enthusiast
