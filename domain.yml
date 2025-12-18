@@ -1,0 +1,35 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - faq_hours
+  - order_status
+  - refund_request
+  - out_of_scope
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to reach out if you need help."
+
+  utter_faq_hours:
+    - text: "Our support team is available from 9 AM to 5 PM, Monday to Friday."
+
+  utter_order_status:
+    - text: "I can help you track your order. Please provide your order number and I'll check the status for you."
+
+  utter_refund_request:
+    - text: "I understand you'd like a refund. Please provide your order number and I'll assist you with the refund process."
+
+  utter_out_of_scope:
+    - text: "Sorry, I can only help with customer support related questions."
+
+actions:
+  - action_gpt_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

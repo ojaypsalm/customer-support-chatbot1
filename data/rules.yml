@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to greetings
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Answer working hours question
+    steps:
+      - intent: faq_hours
+      - action: utter_faq_hours
+
+  - rule: Handle order status inquiry
+    steps:
+      - intent: order_status
+      - action: utter_order_status
+
+  - rule: Handle refund request
+    steps:
+      - intent: refund_request
+      - action: utter_refund_request
+
+  - rule: Trigger GPT fallback for out-of-scope
+    steps:
+      - intent: out_of_scope
+      - action: action_gpt_fallback
+
+  - rule: Trigger GPT fallback on low confidence
+    steps:
+      - intent: nlu_fallback
+      - action: action_gpt_fallback
